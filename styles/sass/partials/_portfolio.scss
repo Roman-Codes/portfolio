@@ -1,0 +1,43 @@
+.portfolio{
+    img{
+        width:100%;
+        height: auto;
+    }
+
+    .pieces{
+        // justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .piece{
+        // flex-basis: 30%;
+        // height: 30vh;
+        transition: transform 0.5s, filter 0.6s;
+        // position: relative;
+        p{
+            // opacity:0;
+            // position: absolute;
+            // top:0;
+            margin:0;
+            text-align: center;
+            width:100%;
+            height: 100%;
+            background: rgba(255, 255, 255, .9);
+            padding:3rem 1.5rem;
+            transition: opacity .3s;
+        }
+    }
+
+}
+
+@media(max-width:700px){
+    .portfolio{
+        .pieces, .piece{
+            flex-direction: column;
+        }
+
+        .piece:nth-child(even) div:nth-child(1){
+            order:2;
+        } 
+    }
+}

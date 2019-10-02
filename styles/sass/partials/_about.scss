@@ -1,0 +1,30 @@
+.about{
+    p{
+        margin:0;
+    }
+
+    .about-right{
+        padding: 0 2rem;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+
+        ul{
+            padding: 0;
+            width:100%;
+
+            li{
+                padding: 1rem 0;
+                font-size: 1.8rem;
+            }
+        }
+
+    }
+}
+
+@media(max-width:600px){
+    .about-content{
+        p{
+            padding-bottom: 1rem;
+        }
+        flex-direction: column;
+    }
+}
